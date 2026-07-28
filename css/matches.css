@@ -65,3 +65,10 @@ textarea:focus-visible { outline: 3px solid color-mix(in srgb, var(--sport-accen
   gap: 16px;
   margin-bottom: 18px;
 }
+
+.panel__header h2,
+.panel__header h3 { margin: 0; font-family: Georgia, "Times New Roman", serif; letter-spacing: -.02em; }
+.panel__header h2 { font-size: 1.48rem; }
+.panel__header h3 { font-size: 1.17rem; }
+.panel__header p { margin: 5px 0 0; color: var(--muted); font-size: .9rem; }
+.panel--dark .panel__header p { color: #aeb5c1; }
