@@ -1,0 +1,30 @@
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: end;
+  margin-bottom: 20px;
+  padding: 16px;
+  background: rgba(255,253,249,.8);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+}
+.toolbar .field { flex: 1 1 180px; margin: 0; }
+.toolbar .field--wide { flex-basis: 290px; }
+
+.field { display: grid; gap: 7px; margin-bottom: 15px; }
+.field label { font-size: .82rem; font-weight: 800; }
+.field small { color: var(--muted); }
+.field-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.field-row--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+input,
+select,
+textarea {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  color: var(--text);
+  background: white;
+  border: 1px solid #cfc8bc;
+  border-radius: 9px;
+}
