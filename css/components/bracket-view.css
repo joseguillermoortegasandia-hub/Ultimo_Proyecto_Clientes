@@ -1,0 +1,9 @@
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  color: white;
+  background: rgba(17, 24, 39, .96);
+  border-bottom: 1px solid rgba(255, 255, 255, .09);
+  backdrop-filter: blur(18px);
+}
