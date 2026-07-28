@@ -179,3 +179,22 @@ textarea:focus-visible { outline: 3px solid color-mix(in srgb, var(--sport-accen
 .player-card { cursor: pointer; }
 .player-card__visual { display: flex; align-items: center; gap: 14px; }
 .player-number { display: inline-grid; place-items: center; min-width: 33px; height: 33px; padding: 0 8px; border-radius: 50%; background: var(--ink); color: white; font-weight: 850; }
+
+
+.match-list { display: grid; gap: 10px; }
+.match-row {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) 165px auto;
+  gap: 14px;
+  align-items: center;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.match-row:hover { border-color: color-mix(in srgb, var(--sport-accent) 45%, var(--line)); }
+.match-row__team { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.match-row__team--away { justify-content: flex-end; text-align: right; }
+.match-row__team strong { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.match-row__score { min-width: 70px; text-align: center; font-family: Georgia, "Times New Roman", serif; font-weight: 900; font-size: 1.25rem; }
+.match-row__date { color: var(--muted); font-size: .88rem; }
