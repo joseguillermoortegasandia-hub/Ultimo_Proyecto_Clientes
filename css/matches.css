@@ -106,3 +106,25 @@ textarea:focus-visible { outline: 3px solid color-mix(in srgb, var(--sport-accen
 .match-center { min-width: 100px; text-align: center; }
 .match-center__score { display: block; font-family: Georgia, "Times New Roman", serif; font-size: 2.25rem; font-weight: 800; letter-spacing: -.05em; }
 .match-center__label { color: var(--muted); font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+
+
+.crest,
+.avatar {
+  position: relative;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  overflow: hidden;
+  color: white;
+  background: var(--crest-primary, var(--sport-accent));
+  border: 3px solid var(--crest-secondary, rgba(255,255,255,.45));
+  font-weight: 900;
+  letter-spacing: -.02em;
+}
+.crest { width: 58px; height: 58px; border-radius: 18px 18px 24px 24px; }
+.crest--sm { width: 34px; height: 34px; border-width: 2px; border-radius: 10px 10px 14px 14px; font-size: .72rem; }
+.crest--lg { width: 92px; height: 92px; border-width: 5px; border-radius: 25px 25px 34px 34px; font-size: 1.45rem; }
+.avatar { width: 54px; height: 54px; border-radius: 50%; border-color: rgba(255,255,255,.55); }
+.avatar--lg { width: 112px; height: 112px; font-size: 1.8rem; }
+.crest img,
+.avatar img { width: 100%; height: 100%; object-fit: cover; }
