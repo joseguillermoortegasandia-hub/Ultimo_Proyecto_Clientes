@@ -1,0 +1,23 @@
+:root {
+  --bg: #f4f1eb;
+  --surface: #fffdf9;
+  --surface-2: #ebe6dc;
+  --text: #141923;
+  --muted: #68707d;
+  --line: #d8d2c8;
+  --ink: #111827;
+  --accent: #bb3e2f;
+  --accent-2: #d67b45;
+  --accent-soft: #f3d8cc;
+  --success: #216e50;
+  --danger: #9d2b2b;
+  --warning: #8d5a18;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --shadow: 0 16px 45px rgba(20, 25, 35, .10);
+  --max: 1240px;
+  --sport-accent: var(--accent);
+  --sport-accent-2: var(--accent-2);
+  --sport-soft: var(--accent-soft);
+}
