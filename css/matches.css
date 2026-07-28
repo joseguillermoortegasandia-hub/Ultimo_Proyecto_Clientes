@@ -1,0 +1,15 @@
+.button {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: var(--sport-accent);
+  color: white;
+  font-weight: 760;
+  text-decoration: none;
+  transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
+}
