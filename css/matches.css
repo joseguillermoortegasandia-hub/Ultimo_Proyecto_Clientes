@@ -72,3 +72,22 @@ textarea:focus-visible { outline: 3px solid color-mix(in srgb, var(--sport-accen
 .panel__header h3 { font-size: 1.17rem; }
 .panel__header p { margin: 5px 0 0; color: var(--muted); font-size: .9rem; }
 .panel--dark .panel__header p { color: #aeb5c1; }
+
+.metric-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-bottom: 28px;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+}
+.metric-strip__item {
+  padding: 20px 22px;
+  border-right: 1px solid var(--line);
+}
+.metric-strip__item:last-child { border-right: 0; }
+.metric-strip span { display: block; color: var(--muted); font-size: .78rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.metric-strip strong { display: block; margin-top: 7px; font-family: Georgia, "Times New Roman", serif; font-size: 1.55rem; letter-spacing: -.02em; }
+.metric-strip small { color: var(--muted); }
