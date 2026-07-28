@@ -36,3 +36,13 @@ textarea:focus-visible { outline: 3px solid color-mix(in srgb, var(--sport-accen
   font-size: .82rem;
   font-weight: 750;
 }
+
+
+.content-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 18px; }
+.span-12 { grid-column: span 12; }
+.span-8 { grid-column: span 8; }
+.span-7 { grid-column: span 7; }
+.span-6 { grid-column: span 6; }
+.span-5 { grid-column: span 5; }
+.span-4 { grid-column: span 4; }
+.span-3 { grid-column: span 3; }
