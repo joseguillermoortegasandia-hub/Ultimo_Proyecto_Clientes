@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="LeagueHub, gestor local de ligas deportivas amateur.">
+  <title>LeagueHub</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#app-view">Saltar al contenido</a>
+
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="#dashboard" aria-label="Ir al dashboard">
+        <span class="brand__mark">LH</span>
+        <span>
+          <strong>LeagueHub</strong>
+          <small>Gestión deportiva local</small>
+        </span>
+      </a>
+
+      <div class="league-context" id="league-context" aria-live="polite">
+        <span class="league-context__label">Liga activa</span>
+        <strong id="active-league-name">Sin liga seleccionada</strong>
+        <span id="active-league-sport">Crea o activa una liga</span>
+      </div>
+
+      <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">
+        Menú
+      </button>
+    </div>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <a href="#dashboard" data-route="dashboard">Inicio</a>
+      <a href="#leagues" data-route="leagues">Ligas</a>
+      <a href="#teams" data-route="teams">Equipos</a>
+      <a href="#players" data-route="players">Jugadores</a>
+      <a href="#matches" data-route="matches">Partidos</a>
+      <a href="#stats" data-route="stats">Estadísticas</a>
+    </nav>
+  </header>
+
+  <main id="app-view" class="app-shell" tabindex="-1">
+    <section class="loading-screen">
+      <span class="loading-line"></span>
+      <p>Preparando LeagueHub…</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>LeagueHub</strong> · Proyecto académico 2026</p>
+    <p id="db-status" class="db-status">IndexedDB: conectando</p>
+  </footer>
+
+  <dialog id="app-dialog" class="dialog-shell">
+    <form method="dialog" class="dialog-shell__frame" id="dialog-form-shell">
+      <header class="dialog-shell__header">
+        <div>
+          <p class="eyebrow" id="dialog-eyebrow">LeagueHub</p>
+          <h2 id="dialog-title">Formulario</h2>
+        </div>
+        <button class="icon-button" value="cancel" aria-label="Cerrar diálogo" type="submit">Cerrar</button>
+      </header>
+      <div id="dialog-body" class="dialog-shell__body"></div>
+    </form>
+  </dialog>
+
+  <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+
+  <script async src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" onload="window.dispatchEvent(new Event('leaguehub-chart-ready'))"></script>
+  <script defer src="js/sports-terms.js"></script>
+  <script defer src="js/db.js"></script>
+  <script defer src="js/services.js"></script>
+  <script defer src="js/components.js"></script>
+  <script defer src="js/charts.js"></script>
+  <script defer src="js/app.js"></script>
+</body>
+</html>
